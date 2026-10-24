@@ -3,13 +3,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>5words - Browser Alpha</title>
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1">
+  <title>5WORDS - Alpha 10.3</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 16px;
+      background: #192c40;
+      color: #f2d48b;
+      font-family: Georgia, serif;
+      text-align: center;
+    }
+    #game {
+      width: 100%;
+      max-width: 640px;
+      height: 550px;
+      margin: 20px auto;
+    }
+  </style>
 </head>
-<body style="background:#192c40;color:#f2d48b;text-align:center;font-family:Georgia;padding:40px;">
+<body>
   <h1>⚔️ 5WORDS ⚔️</h1>
-  <h2>The Kingdom Awaits</h2>
-  <p>Game Boy Color Browser Alpha</p>
-  <p>Coming Soon!</p>
+  <p>Game Boy Color - Alpha 10.3</p>
+
+  <div id="game"></div>
+
+  <script>
+    var EJS_player = "#game";
+    var EJS_core = "gb";
+    var EJS_gameName = "5WORDS Alpha 10.3";
+    var EJS_gameUrl = "5words.gbc";
+    var EJS_pathtodata =
+      "https://cdn.emulatorjs.org/stable/data/";
+  </script>
+
+  <script src="https://cdn.emulatorjs.org/stable/data/loader.js"></script>
 </body>
 </html>
